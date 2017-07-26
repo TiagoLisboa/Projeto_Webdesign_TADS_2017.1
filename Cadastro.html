@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+ <script src="js/Cadastro.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+ <style type="text/css">
+     label{
+         font-size: 15px;
+         font-weight: bold;
+     }
+ </style>
+    <title>Document</title>
+</head>
+<body style="background-color: #dedede">
+   <div class="container">
+        <form class="form-update" onsubmit="alert('Dados alterados com sucesso')">
+            <div class="form-group">
+                <label for="inputPassword"> Digite sua senha * </label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Senha" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirme sua senha *</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme sua Senha" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputCPF">Digite seu CPF *</label>
+                <input type="text" class="form-control" id="inputCPF" placeholder="000.000.000 - 00" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputData">Digite sua data de nascimento *</label>
+                <input type="txt" class="form-control" id="inputData" placeholder="dd/mm/aaaa" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputCEP">Digite seu CEP *</label>
+                <input type="txt" class="form-control" id="inputCEP" placeholder="00000-000" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block" onclick="location.href='usr/Index.html'">Cadastrar!</button>
+        </form>
+    </div>
+
+</body>
+</html>

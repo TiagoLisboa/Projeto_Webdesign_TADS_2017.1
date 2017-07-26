@@ -1,0 +1,47 @@
+body {
+    background-color:#dedede !important;
+}
+
+#RS img{
+	display: inline;
+	width: 3%;
+	margin: 1.5em 0.5em;
+}
+hr{
+	width: 1px;
+	height: 50px;
+    display: inline-block;
+	background-color:black;
+    border : 0 none;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+
+  #container_nav{
+  }
+.nav_right{
+    float: right;
+    margin-top: 5px;
+    width: 50%;
+    margin-left: 100px;
+  }
+
+.nav_right a{
+    font-size: 1em;
+    color: black !important;
+  }
+  .nav_right a:hover{
+    text-decoration: none;
+  }
+
+  .container_foot {   
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:150px;}
+  .dropdown a {
+    cursor: pointer;
+  }

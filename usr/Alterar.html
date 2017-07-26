@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/Alterar.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href ="../css/base.css" >
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+<title>Alterar Dados</title>
+</head>
+<body >
+    <nav id="container_nav" class=" navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Lucky Express </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Produtos.html">Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contato.html">Contato<span class="sr-only">(current)</span></a>
+      </li>
+    <li class="dropdown active">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Perfil
+        <span class="carret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="Alterar.html">Alterar dados</a></li>
+            <li><a href="m_Compras.html">Minhas Compras</a></li>
+        </ul>
+
+      </li>
+    </ul>
+  </div>
+<div class="center"><!-- 
+    <form class="form-inline my-2 my-lg-0 ">
+      <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form> -->
+    <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Pesquisar por...">
+      <span class="input-group-btn ">
+        <button class="btn btn-default" type="button" onclick="location.href='Resultado_busca.html'"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+    </div>
+     <div class="nav_right">
+        <a id="chart" href="Carrinho.html">
+        <span>R$ 854.00</span><span class="glyphicon glyphicon-shopping-cart"/>
+        </a>
+      </div>
+   
+     </nav>
+<div class="container">
+        <form class="form-update" onsubmit="alert('Dados alterados com sucesso')">
+            <div class="form-group">
+                <label for="inputPassword"> Digite sua senha * </label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Senha" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirme sua senha *</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme sua Senha" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputCPF">Digite seu CPF *</label>
+                <input type="text" class="form-control" id="inputCPF" placeholder="000.000.000 - 00" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputData">Digite sua data de nascimento *</label>
+                <input type="txt" class="form-control" id="inputData" placeholder="dd/mm/aaaa" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputCEP">Digite seu CEP *</label>
+                <input type="txt" class="form-control" id="inputCEP" placeholder="00000-000" required="required">
+                <div class="help-block with-erros"></div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Alterar dados</button>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

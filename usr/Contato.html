@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/Contato.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href ="../css/base.css" >
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<style type="text/css">
+
+    
+ </style>    
+<title>Contato</title>
+</head>
+<body >
+    <nav id="container_nav" class=" navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Lucky Express </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Index.html">Página Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Produtos.html">Produtos</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Contato.html">Contato<span class="sr-only">(current)</span></a>
+      </li>
+    <li class="dropdown active">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Perfil
+        <span class="carret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="Alterar.html">Alterar dados</a></li>
+            <li><a href="m_Compras.html">Minhas Compras</a></li>
+        </ul>
+
+      </li>
+    </ul>
+  </div>
+<div class="center"><!-- 
+    <form class="form-inline my-2 my-lg-0 ">
+      <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form> -->
+    <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Pesquisar por...">
+      <span class="input-group-btn ">
+        <button class="btn btn-default" type="button" onclick="location.href='Resultado_busca.html'"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+    </div>
+     <div class="nav_right">
+        <a id="chart" href="Carrinho.html">
+        <span>R$ 854.00</span><span class="glyphicon glyphicon-shopping-cart"/>
+        </a>
+      </div>
+   
+     </nav>
+    <div class="container">
+            <p>Caso deseje contatar um dos nossos supervisores ou precise de ajuda,envie-nos um email para luckyexpress@notanemail.com ou utilize o formulário abaixo.</p>
+            <form id="contact-form" onsubmit="alert('Obrigado por entrar em conntato')">
+
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Nome *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Digite o seu nome *" required="required" data-error="Digite o seu nome.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Sobrenome *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Digite o seu sobrenome *" required="required" data-error="Digite um sobrenome.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Digite seu  email *" required="required" data-error="Digite um email válido.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">Número para contato</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Digite seu telefone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Mensagem *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Digite a mensagem *" rows="4" required="required" data-error="Deixe uma mensagem."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" id="sender" class="btn btn-success btn-send" value="Enviar" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> Esses campos são necessários.</p>
+            </div>
+        </div>
+    </div>
+
+</form>
+    </div>
+
+
+    <script src="../js/jquery.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

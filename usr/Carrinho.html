@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="../js/carrinho.js"> </script>    
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/base.css" >
+    <link rel="stylesheet" href="../css/carrinho_pro.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<style type="text/css">
+  .center{  
+    /* 
+    margin-left:100px;
+    border-color: black;
+    border-width: 10px;
+    border-style: solid; */
+    margin-right:100px;
+  }
+  .nav_right{
+    float: right;
+    margin-top: 5px;
+    width: 40%;
+  }
+  .nav_right a{
+    font-size: 1em;
+    color: black !important;
+  }
+  .nav_right a:hover{
+    text-decoration: none;
+  }
+ </style>     
+<title>Carrinho de compra</title>
+</head>
+<body >
+    <nav id="container_nav" class=" navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="Index.html">Lucky Express </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Produtos.html">Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contato.html">Contato</a>
+			</li><li class="dropdown active">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Perfil
+        <span class="carret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="Alterar.html">Alterar dados</a></li>
+            <li><a href="m_Compras.html">Minhas Compras</a></li>
+        </ul>
+
+      </li>
+    </ul>
+    
+  </div>
+  <div class="center"><!-- 
+    <form class="form-inline my-2 my-lg-0 ">
+      <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form> -->
+    <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Pesquisar por...">
+      <span class="input-group-btn ">
+        <button class="btn btn-default" type="button" onclick="location.href='Resultado_busca.html'"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+    </div>
+      <div class="nav_right">
+        <a id="chart" href="Carrinho.html">
+        <span>R$ 854.00</span><span class="glyphicon glyphicon-shopping-cart"/>
+        </a>
+      </div>
+     </nav>
+     
+        	<div class="checkout">
+		<div class="container">
+			<h3>O seu carrinho de compras contém: <span>3 Produtos</span></h3>
+			<div>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>Produto</th>
+							<th>Quantidade</th>
+							<th>Nome do produto</th>
+							<th>Preço</th>
+							<th>Remover</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr class="rem1">
+						<td class="img_tam"><a href="Item.html"><img src="../img/b_s.png" alt=" " class="img-responsive" /></a></td>
+						<td>
+							 <div class="quantity"> 
+								<div class="quantity-select">                           
+									<div class="entry value-minus">&nbsp;</div>
+									<div class="entry value"><span>1</span></div>
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+						</td>
+						<td>Sapato Preto</td>
+						<td>$290.00</td>
+						<td>
+							<div class="rem">
+								<div class="close1"> </div>
+							</div>
+						</td>
+					</tr>
+					<tr class="rem2">
+						<td class="img_tam"><a href="#"><img src="../img/c_t.png" alt=" " class="img-responsive" /></a></td>
+						<td>
+							 <div class="quantity"> 
+								<div class="quantity-select">                           
+									<div class="entry value-minus">&nbsp;</div>
+									<div class="entry value"><span>1</span></div>
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+						</td>
+						<td>Mesa de Centro</td>
+						<td>$250.00</td>
+						<td>
+							<div class="rem">
+								<div class="close2"> </div>
+							</div>
+						</td>
+					</tr>
+					<tr class="rem3">
+						<td class="img_tam"><a href="#"><img src="../img/s_b.png" alt=" " class="img-responsive" /></a></td>
+						<td>
+							 <div class="quantity"> 
+								<div class="quantity-select">                           
+									<div class="entry value-minus">&nbsp;</div>
+									<div class="entry value"><span>1</span></div>
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+						</td>
+						<td>Braceletes de Pedra</td>
+						<td>$299.00</td>
+						<td>
+							<div class="rem">
+								<div class="close3"> </div>
+							</div>
+						</td>
+					<tr>
+						<th colspan="4"><strong> Total </strong></th>
+						<td>R$ 839</td>
+						</tr>
+					</tbody>
+				</table>
+        <button type="button" class="btn btn-success" onclick="location.href='Compra.html'">Terminar compra</button>
+				<div class="checkout-right-basket">
+					<a href="Produtos.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Contiuar as compras</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+    <!-- /.container -->
+
+    <script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
